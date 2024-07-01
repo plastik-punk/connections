@@ -22,6 +22,14 @@ misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 
+# Gradle wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Gradle scripts (for Unix-like and Windows systems)
+gradlew
+gradlew.bat
+
 # Keystore files
 *.jks
 *.keystore
