@@ -9,15 +9,16 @@ class DatabaseActions {
 
     suspend fun initializeData(database: WordConnectionDatabase) {
         withContext(Dispatchers.IO) {
+            database.clearAllTables()
             if (database.wordConnectionDao().getConnectionsByRound(1).isEmpty()) {
                 val round = 1
                 val difficulties = listOf(0, 1, 2, 3) // Unique difficulties for each connection
 
                 // Connection data (adjust as needed)
                 val connectionData = listOf(
-                    listOf("Button", "Text", "Image", "View"),
-                    listOf("Layout", "Widget", "Theme", "Style"),
-                    listOf("Activity", "Fragment", "Service", "Broadcast"),
+                    listOf("Green", "Red", "Blue", "Yellow"),
+                    listOf("Sunday", "Monday", "Tuesday", "Wednesday"),
+                    listOf("Math", "Science", "History", "Art"),
                     listOf("Kotlin", "Java", "XML", "Gradle")
                 )
 
