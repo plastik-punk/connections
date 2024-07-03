@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Connections</string>
+    <string name="app_name" translatable="false">Connections</string>
+    <string name="shuffle" translatable="true">Shuffle</string>
+    <string name="deselect" translatable="true">Deselect</string>
+    <string name="submit" translatable="true">Submit</string>
+    <string name="mistakes" translatable="true">Mistakes remaining:</string>
+    <string name="info" translatable="true">Create four groups of four!</string>
 </resources>

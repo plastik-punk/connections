@@ -28,7 +28,7 @@
             android:id="@+id/info_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create four groups of four!"
+            android:text="@string/info"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -52,22 +52,26 @@
             <Button
                 android:id="@+id/row_0_word_0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="selectRow0Word0" />
 
             <Button
                 android:id="@+id/row_0_word_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="selectRow0Word1" />
 
             <Button
                 android:id="@+id/row_0_word_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="selectRow0Word2" />
 
             <Button
                 android:id="@+id/row_0_word_3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="selectRow0Word3" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,22 +83,26 @@
             <Button
                 android:id="@+id/row_1_word_0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="selectRow1Word0" />
 
             <Button
                 android:id="@+id/row_1_word_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:onClick="selectRow0Word2" />
 
             <Button
                 android:id="@+id/row_1_word_2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:onClick="selectRow1Word2" />
 
             <Button
                 android:id="@+id/row_1_word_3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:onClick="selectRow1Word3" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,25 +115,29 @@
                 android:id="@+id/row_2_word_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="selectRow2Word0" />
 
             <Button
                 android:id="@+id/row_2_word_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="selectRow2Word1" />
 
             <Button
                 android:id="@+id/row_2_word_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="selectRow2Word2" />
 
             <Button
                 android:id="@+id/row_2_word_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="selectRow2Word3" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,25 +150,29 @@
                 android:id="@+id/row_3_word_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="selectRow3Word0" />
 
             <Button
                 android:id="@+id/row_3_word_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="selectRow3Word1" />
 
             <Button
                 android:id="@+id/row_3_word_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="selectRow3Word2" />
 
             <Button
                 android:id="@+id/row_3_word_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:onClick="selectRow3Word3" />
         </LinearLayout>
     </LinearLayout>
 
@@ -175,7 +191,7 @@
             android:id="@+id/mistakes_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mistakes remaining:"
+            android:text="@string/mistakes"
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent" />
@@ -191,6 +207,7 @@
 
     <LinearLayout
         android:id="@+id/buttons"
+        style="@style/Widget.AppCompat.ButtonBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -202,26 +219,29 @@
 
         <Button
             android:id="@+id/shuffle_button"
+            style="?attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="shuffle"
-            android:text="Shuffle"
+            android:text="@string/shuffle"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/deselect_button"
+            style="?attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="deselect"
-            android:text="Deselect"
+            android:text="@string/deselect"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/submit_button"
+            style="?attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="submit"
-            android:text="Submit"
+            android:text="@string/submit"
             android:textSize="20sp" />
     </LinearLayout>
 
