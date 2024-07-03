@@ -90,7 +90,7 @@
                 android:id="@+id/row_1_word_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="selectRow0Word2" />
+                android:onClick="selectRow1Word1" />
 
             <Button
                 android:id="@+id/row_1_word_2"
